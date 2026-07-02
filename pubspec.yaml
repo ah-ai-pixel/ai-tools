@@ -1,0 +1,40 @@
+name: anime_ai_app
+description: "AI застосунок для перетворення фото у стиль японського аніме"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Вибір зображення з галереї / камери
+  image_picker: ^1.1.2
+
+  # HTTP запити до Replicate API
+  http: ^1.2.2
+
+  # Збереження API ключа локально (не в коді!)
+  flutter_secure_storage: ^9.2.2
+
+  # Збереження згенерованого фото в галерею телефону
+  gal: ^2.3.0
+
+  # Індикатор завантаження
+  flutter_spinkit: ^5.2.1
+
+  # Змінні середовища (.env) — щоб ключ не потрапив у git
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
